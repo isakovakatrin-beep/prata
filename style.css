@@ -1,0 +1,207 @@
+body {
+  background-color: #f8f4f2; /* ЭТО УСТАНАВЛИВАЕТ ЦВЕТ ФОНА */
+  color: #ab2e2e;
+  font-family: "Prata", serif;
+  width: 1440px;
+  margin: 0 auto;
+  height: 6000px;
+}
+
+/* Стили для каждого блока-страницы */
+div {
+  width: 1440px;
+  height: 900px;
+  position: relative; /* КЛЮЧЕВОЕ ИЗМЕНЕНИЕ: для работы position: absolute */
+  overflow: hidden;
+}
+
+/* ОБЩИЙ СТИЛЬ для всех позиционируемых элементов */
+.pattern,
+.first,
+.second,
+.macaroni,
+.minifirst,
+.pasta,
+.gg,
+.pattern2,
+.fork,
+.tablecloth,
+.third,
+.four,
+.glyph,
+.pattern3,
+.type,
+.pasts1,
+.pasts2,
+.leng,
+.pattern4,
+.pattern5,
+.eat,
+.cooking,
+.eat1,
+.eat2,
+.eat3,
+.eat4,
+.pattern6,
+.bon {
+  position: absolute; /* ОБЯЗАТЕЛЬНОЕ ПРАВИЛО */
+  display: block;
+}
+
+/* ========================================================================= */
+/* ПЕРВАЯ СТРАНИЦА (prata-1) */
+/* ========================================================================= */
+
+.pattern {
+  top: 0px;
+  left: 0px;
+}
+.pattern1 {
+  top: 15px;
+  left: 15px;
+}
+
+.first {
+  font-size: 150px;
+  top: 130px;
+  left: 50px;
+  z-index: 10;
+}
+.second {
+  font-size: 96px;
+  top: 240px;
+  left: 220px;
+}
+.macaroni {
+  top: 400px;
+  left: 200px;
+}
+.minifirst {
+  font-size: 14px;
+  top: 350px;
+  left: 50px;
+}
+.pasta {
+  top: 50px;
+  left: 700px;
+}
+.gg {
+  top: 0px;
+  left: 1000px;
+}
+
+/* ========================================================================= */
+/* ВТОРАЯ СТРАНИЦА (prata-2) */
+/* ========================================================================= */
+
+.pattern2 {
+  top: 0px;
+  left: 0px;
+}
+.fork {
+  top: 144px;
+  left: 60px;
+}
+.tablecloth {
+  top: 0px;
+  left: 0px;
+}
+.third {
+  font-size: 32px;
+  top: 144px;
+  left: 700px;
+  width: 650px;
+}
+
+/* ========================================================================= */
+/* ТРЕТЬЯ СТРАНИЦА (prata-3) */
+/* ========================================================================= */
+
+.four {
+  font-size: 80px;
+  top: 140px;
+  left: 50px;
+}
+.glyph {
+  top: 260px;
+  left: 50px;
+}
+.pattern3 {
+  top: 0px;
+  left: 900px;
+}
+
+/* ========================================================================= */
+/* ЧЕТВЕРТАЯ СТРАНИЦА (prata-4) */
+/* ========================================================================= */
+
+.type {
+  top: 144px;
+  left: 700px;
+}
+.pasts1 {
+  top: 250px;
+  left: 50px;
+}
+.pasts2 {
+  top: 400px;
+  left: 300px;
+}
+.leng {
+  top: 550px;
+  left: 650px;
+}
+
+/* ========================================================================= */
+/* ПЯТАЯ СТРАНИЦА (prata-5) */
+/* ========================================================================= */
+
+.pattern4 {
+  top: 0px;
+  left: 0px;
+}
+.pattern5 {
+  top: 15px;
+  left: 15px;
+}
+.eat {
+  top: 144px;
+  left: 50px;
+}
+.cooking {
+  top: 144px;
+  left: 700px;
+}
+.eat1 {
+  top: 450px;
+  left: 50px;
+  width: 250px;
+}
+.eat2 {
+  top: 450px;
+  left: 400px;
+  width: 250px;
+}
+.eat3 {
+  top: 450px;
+  left: 750px;
+  width: 250px;
+}
+.eat4 {
+  top: 450px;
+  left: 1100px;
+  width: 250px;
+}
+
+/* ========================================================================= */
+/* ШЕСТАЯ СТРАНИЦА (prata-6) */
+/* ========================================================================= */
+
+.pattern6 {
+  top: 0px;
+  left: 0px;
+}
+.bon {
+  top: 200px;
+  left: 400px;
+}
