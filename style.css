@@ -73,7 +73,7 @@ body {
 .pasta {
   display: block;
   position: absolute;
-  top: 100px;
+  top: 400px;
   left: 700px;
 }
 
@@ -230,6 +230,7 @@ body {
   margin-top: -20px;
   margin-left: 0px;
 }
+
 
 
 
