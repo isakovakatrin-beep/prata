@@ -66,18 +66,14 @@ body {
 
 .gg {
   display: block;
-  position: absolute;
-  margin: 0 auto;
-  top: 100px;
-  left: 80px;
+  margin-top: -600px;
+  margin-left: 80px;
 }
 
 .pasta {
   display: block;
-  position: absolute;
-  margin: 0 auto;
-  top: 100px;
-  left: 700px;
+  margin-top: -800px;
+  margin-left: 700px;
 }
 
 /* вторая страница */
@@ -233,6 +229,7 @@ body {
   margin-top: -20px;
   margin-left: 0px;
 }
+
 
 
 
