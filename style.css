@@ -35,6 +35,7 @@ div {
     font-size: 150px; 
     top: 130px; 
     left: 50px; 
+    font-weight: 100;
     z-index: 10; /* Текст PRATA выше всего */
 }
 
@@ -42,6 +43,7 @@ div {
     font-size: 96px; 
     top: 250px; /* СКОРРЕКТИРОВАНО: Сдвинуто ниже, чтобы не накладываться на PRATA */
     left: 220px; 
+    font-weight: 100;
     z-index: 9;
 }
 
@@ -55,6 +57,7 @@ div {
     font-size: 14px; 
     top: 360px; /* СКОРРЕКТИРОВАНО: Сдвинуто ниже */
     left: 50px; 
+    font-weight: 100;
     z-index: 11;
 }
 
@@ -76,7 +79,7 @@ div {
 .pattern2 { top: 900px; left: 0px; } /* Сдвинуто вниз на 900px */
 .fork { top: 144px; left: 60px; }
 .tablecloth { top: 0px; left: 0px; }
-.third { font-size: 32px; top: 144px; left: 700px; width: 650px; }
+.third { font-size: 32px; top: 144px; left: 700px; width: 650px; } font-weight: 100;
 
 /* КОРРЕКЦИЯ ДЛЯ ТЕКСТА ВНУТРИ КРАСНОГО БЛОКА */
 /* Если красный блок - это pattern2, то его содержимое должно быть позиционировано относительно него */
@@ -100,3 +103,4 @@ div {
 .glyph { top: 260px; left: 50px; }
 .pattern3 { top: 0px; left: 900px; }
 /* и т.д. */
+
