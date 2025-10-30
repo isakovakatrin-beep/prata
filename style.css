@@ -67,6 +67,7 @@ body {
 .gg {
   display: block;
   position: absolute;
+  margin: 0 auto;
   top: 100px;
   left: 80px;
 }
@@ -74,6 +75,7 @@ body {
 .pasta {
   display: block;
   position: absolute;
+  margin: 0 auto;
   top: 100px;
   left: 700px;
 }
@@ -231,6 +233,7 @@ body {
   margin-top: -20px;
   margin-left: 0px;
 }
+
 
 
 
