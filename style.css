@@ -65,7 +65,7 @@ body {
 
 .gg {
   display: block;
-  margin-top: 10px;
+  margin-top: -600px;
   margin-left: 80px;
 }
 
@@ -228,9 +228,3 @@ body {
   margin-top: -20px;
   margin-left: 0px;
 }
-
-
-
-
-
-
