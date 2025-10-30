@@ -1,106 +1,231 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 body {
-    background-color: #F8F4F2; 
-    color: #AB2E2E;
-    font-family: 'Prata', serif;
-    width: 1440px; 
-    margin: 0 auto; 
-    height: 6000px; 
+  /* размеры макета */
+  width: 1440px;
+  height: 4710px;
+  /* цвет фона */
+  background-color: #f5f5f5;
 }
 
-/* Стили для каждого блока-страницы */
-div {
-    width: 1440px;
-    height: 900px; 
-    position: relative; /* ОБЯЗАТЕЛЬНО */
-    overflow: hidden; 
+/* первая страница */
+.pattern {
+  display: block;
+  margin-top: 0px;
+  margin-left: 0px;
 }
 
-/* ОБЩИЙ СТИЛЬ для всех позиционируемых элементов */
-.pattern, .first, .second, .macaroni, .minifirst, .pasta, .gg, 
-.pattern2, .fork, .tablecloth, .third, .four, .glyph, .pattern3,
-.type, .pasts1, .pasts2, .leng, .pattern4, .pattern5, .eat, .cooking,
-.eat1, .eat2, .eat3, .eat4, .pattern6, .bon {
-    position: absolute; 
-    display: block;
+.pattern1 {
+  display: block;
+  margin-top: 0px;
+  margin-left: 0px;
 }
 
-/* ========================================================================= */
-/* ПЕРВАЯ СТРАНИЦА (prata-1) - ИСПРАВЛЕНИЕ НАЛОЖЕНИЯ */
-/* ========================================================================= */
-
-.pattern { top: 0px; left: 0px; }
-.pattern1 { top: 15px; left: 15px; }
-
-.first { 
-    font-size: 150px; 
-    top: 130px; 
-    left: 50px; 
-    font-weight: 100;
-    z-index: 10; /* Текст PRATA выше всего */
+.first {
+  display: block;
+  color: #df3838;
+  font-family: prata;
+  font-size: 130px;
+  font-weight: 100;
+  margin-top: 130px;
+  margin-left: 50px;
 }
 
-.second { 
-    font-size: 96px; 
-    top: 250px; /* СКОРРЕКТИРОВАНО: Сдвинуто ниже, чтобы не накладываться на PRATA */
-    left: 220px; 
-    font-weight: 100;
-    z-index: 9;
+.second {
+  display: block;
+  color: #df3838;
+  font-family: prata;
+  font-size: 110px;
+  font-weight: 100;
+  margin-top: -70px;
+  margin-left: 220px;
 }
 
-.macaroni { 
-    top: 400px; 
-    left: 200px; 
-    z-index: 8;
+.macaroni {
+  display: block;
+  font-family: prata;
+  margin-top: -160px;
+  margin-left: 25px;
 }
 
-.minifirst { 
-    font-size: 14px; 
-    top: 360px; /* СКОРРЕКТИРОВАНО: Сдвинуто ниже */
-    left: 50px; 
-    font-weight: 100;
-    z-index: 11;
+.minifirst {
+  display: block;
+  color: #df3838;
+  font-family: prata;
+  font-size: 30px;
+  font-weight: 100;
+  margin-top: -40px;
+  margin-left: 51px;
 }
 
-.pasta { 
-    top: 50px; 
-    left: 700px; 
-    z-index: 5;
+.gg {
+  display: block;
+  margin-top: -600px;
+  margin-left: 80px;
 }
 
-.gg { 
-    top: 0px; 
-    left: 1000px; 
+.pasta {
+  display: block;
+  margin-top: -800px;
+  margin-left: 700px;
 }
 
-/* ========================================================================= */
-/* ВТОРАЯ СТРАНИЦА (prata-2) - ИСПРАВЛЕНИЕ НАЛОЖЕНИЯ С 1-Й СТРАНИЦЕЙ */
-/* ========================================================================= */
+/* вторая страница */
+.pattern2 {
+  display: block;
+  margin-top: 0px;
+  margin-left: 1430px;
+}
 
-.pattern2 { top: 900px; left: 0px; } /* Сдвинуто вниз на 900px */
-.fork { top: 144px; left: 60px; }
-.tablecloth { top: 0px; left: 0px; }
-.third { font-size: 32px; top: 144px; left: 700px; width: 650px; } font-weight: 100;
+.fork {
+  display: block;
+  margin-top: 50px;
+  margin-left: 0px;
+}
 
-/* КОРРЕКЦИЯ ДЛЯ ТЕКСТА ВНУТРИ КРАСНОГО БЛОКА */
-/* Если красный блок - это pattern2, то его содержимое должно быть позиционировано относительно него */
-/* Если красный блок - это .tablecloth или другое изображение, убедитесь, что его top/left выставлены правильно */
-/* Судя по скриншоту, красный блок (возможно, pattern2) с текстом .third СИЛЬНО съехал */
-/* ПРЕДПОЛОЖЕНИЕ: pattern2 и текст .third должны быть на 900px ниже */
-.pattern2 { 
-    top: 0px; /* ВНУТРИ div: top:0 */
-    left: 0px; 
-} 
-/* ЭТО ОПАСНО: Если вы не видите pattern2, то, возможно, он имеет слишком низкий z-index */
-/* Давайте вернем pattern2 к top:0, но сдвинем весь div вниз, если макет не работает */
-/* Если вы видите, что вся страница 2 начинается на странице 1, то... */
+.tablecloth {
+  display: block;
+  margin-top: -550px;
+  margin-left: 600px;
+}
 
-/* ФИНАЛЬНАЯ ПОПРАВКА: Убедитесь, что div-блоки не накладываются. 
-   Так как body имеет height: 6000px, и div имеет height: 900px, 
-   они должны выстроиться автоматически, если вы не добавили отрицательные margin. */
+.third {
+  display: block;
+  font-family: prata;
+  color: #f5f5f5;
+  font-size: 34px;
+  font-weight: 100;
+  margin-top: -400px;
+  margin-left: 700px;
+}
 
-/* СТРОКИ 3-6: ОСТАВЛЯЕМ БЕЗ ИЗМЕНЕНИЙ */
-.four { font-size: 80px; top: 140px; left: 50px; }
-.glyph { top: 260px; left: 50px; }
-.pattern3 { top: 0px; left: 900px; }
-/* и т.д. */
+/* третья страница */
+.four {
+  display: block;
+  font-family: prata;
+  color: #df3838;
+  font-size: 60px;
+  font-weight: 100;
+  margin-top: 210px;
+  margin-left: 58px;
+}
+
+.glyph {
+  display: block;
+  margin-left: auto;
+}
+
+.pattern3 {
+  display: block;
+  margin-top: -70px;
+}
+
+/* четвертая страница */
+.type {
+  display: block;
+  margin-top: 15px;
+  margin-left: 500px;
+}
+
+.pasts1 {
+  display: block;
+  margin-top: -310px;
+  margin-left: 70px;
+}
+
+.pasts2 {
+  display: block;
+  margin-top: -740px;
+  margin-left: 450px;
+}
+
+.leng {
+  display: block;
+  margin-top: -670px;
+  margin-left: 895px;
+}
+
+/* пятая страница */
+.pattern4 {
+  display: block;
+  margin-top: 0px;
+  margin-left: 1430px;
+}
+
+.pattern5 {
+  display: block;
+  margin-top: 0px;
+  margin-left: 1430px;
+}
+
+.eat {
+  display: block;
+  margin-top: -130px;
+  margin-left: 270px;
+}
+
+.cooking {
+  display: block;
+  margin-top: 70px;
+  margin-left: 120px;
+}
+
+.eat1 {
+  display: block;
+  font-family: prata;
+  color: #df3838;
+  font-size: 24px;
+  font-weight: 100;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.eat2 {
+  display: block;
+  font-family: prata;
+  color: #df3838;
+  font-size: 24px;
+  font-weight: 100;
+  margin-top: -165px;
+  margin-left: 460px;
+}
+
+.eat3 {
+  display: block;
+  font-family: prata;
+  color: #df3838;
+  font-size: 24px;
+  font-weight: 100;
+  margin-top: -103px;
+  margin-left: 780px;
+}
+
+.eat4 {
+  display: block;
+  font-family: prata;
+  color: #df3838;
+  font-size: 24px;
+  font-weight: 100;
+  margin-top: -135px;
+  margin-left: 1120px;
+}
+
+/* шестая страница */
+.pattern6 {
+  display: block;
+  margin-top: 160px;
+  margin-left: 0px;
+}
+
+.bon {
+  display: block;
+  width: 1520px;
+  margin-top: -20px;
+  margin-left: 0px;
+}
 
